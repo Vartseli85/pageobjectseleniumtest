@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
@@ -64,6 +65,13 @@ public class MainPageTest {
         int i = driver.findElements(By.xpath("//nav[@class='header_navigation']//li[4]//div[1]//div[1]//div[1]//div[2]//ul[1]//li")).size();
         Assert.assertEquals(6,i);
     }
+    @Test
+    public void distinationDropDown(){
+        mainPage.distinationDropDown();
+        WebElement dropDistination = driver.findElement(By.xpath("//div[@class='c22 show']//div[@class='c29_body']"));
+        dropDistination.isDisplayed();
+    }
+
 
 
     @After
