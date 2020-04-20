@@ -4,6 +4,10 @@
     <list default="true" id="df4a93d9-326a-41c8-9f67-13bd735492c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LogInPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LogInPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MainPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MainPageTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +45,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.RegisterPageTest.createAccountButtonIsEnabled">
+  <component name="RunManager" selected="JUnit.MainPageTest.distinationDropDown">
     <configuration name="FindNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FindNumber" />
       <module name="pageobjectseleniumtest" />
@@ -63,11 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTest.distinationDropDown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pageobjectseleniumtest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RegisterPageTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="MainPageTest" />
+      <option name="METHOD_NAME" value="distinationDropDown" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,11 +89,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainPageTest.distinationDropDown" />
         <item itemvalue="JUnit.RegisterPageTest.createAccountButtonIsEnabled" />
         <item itemvalue="Application.Rochambeau" />
         <item itemvalue="Application.Result" />
         <item itemvalue="Application.FindNumber" />
-        <item itemvalue="JUnit.RegisterPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -134,38 +139,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="294" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587354209110" />
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom" timestamp="1587344947865">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1587422284364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587344947865" />
-    <state width="1323" height="223" key="GridCell.Tab.0.center" timestamp="1587344947865">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587422284364" />
+    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1587422284364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587344947865" />
-    <state width="1323" height="223" key="GridCell.Tab.0.left" timestamp="1587344947865">
+    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587422284364" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1587422284364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587344947865" />
-    <state width="1323" height="223" key="GridCell.Tab.0.right" timestamp="1587344947865">
+    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587422284364" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1587422284364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587344947865" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1587344972435">
+    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587422284364" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1587422169378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587344972435" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1587344972434">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587422169378" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1587422169378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1587344972434" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1587344972434">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1587422169378" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1587422169378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1587344972434" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1587344972435">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1587422169378" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1587422169378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1587344972435" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1587422169378" />
     <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1585279576755">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
