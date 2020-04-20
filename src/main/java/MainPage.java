@@ -14,7 +14,7 @@ public class MainPage {
 
     private By logInButton = By.xpath("//a[contains(text(),'Log in')]");
     private By registerButton = By.xpath("//a[contains(text(),'Register')]");
-    //private WebElement dropMenu1 = driver.findElement(By.xpath("//a[@class='linkNav'][contains(text(),'Why Norwegian')]"));
+
 
 
     public LogInPage clickLogIn(){
