@@ -14,6 +14,7 @@ public class MainPage {
 
     private By logInButton = By.xpath("//a[contains(text(),'Log in')]");
     private By registerButton = By.xpath("//a[contains(text(),'Register')]");
+    private By distinationDrop = By.xpath("//span[@class='e1_toggle_single'][contains(text(),'Destination')]");
 
 
 
@@ -49,6 +50,11 @@ public class MainPage {
         actions.moveToElement(driver.findElement(By.xpath("//a[@class='linkNav'][contains(text(),'Cruise Deals')]"))).build().perform();
         return this;
 
+    }
+
+    public MainPage distinationDropDown(){
+        driver.findElement(distinationDrop).click();
+        return this;
     }
 
 
