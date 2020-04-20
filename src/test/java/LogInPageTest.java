@@ -27,7 +27,6 @@ public class LogInPageTest {
     @Test
     public void wrongUserNameAndPassword(){
         logInPage.logIn("WrongTest","WrongTestPass");
-        //WebElement worning = new WebDriverWait(driver,Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='form-message-error-container']")));
         WebElement worning = driver.findElement(By.xpath("//div[@id='form-message-error-container']/p"));
         String textWorning = worning.getText();
         boolean i = textWorning.contains("does not match records");
