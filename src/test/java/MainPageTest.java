@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class MainPageTest {
@@ -70,6 +72,15 @@ public class MainPageTest {
         mainPage.distinationDropDown();
         WebElement dropDistination = driver.findElement(By.xpath("//div[@class='c22 show']//div[@class='c29_body']"));
         dropDistination.isDisplayed();
+    }
+    @Test
+    public void distinationCheckBoxesSelected(){
+        mainPage.distinationCheckBoxesSelection();
+        List<WebElement> directionsTravelCheckBoxes = driver.findElements(By.xpath("//div[@class='c22 show']//div[@class='c29_block']//li/div"));
+        for (WebElement e:directionsTravelCheckBoxes) {
+            boolean r = e.isSelected();
+            Assert.assertTrue(r);
+        }
     }
 
 
