@@ -76,7 +76,7 @@ public class MainPageTest {
     @Test
     public void distinationCheckBoxesSelected(){
         mainPage.distinationCheckBoxesSelection();
-        List<WebElement> directionsTravelCheckBoxes = driver.findElements(By.xpath("//div[@class='c22 show']//div[@class='c29_block']//li/div"));
+        List<WebElement> directionsTravelCheckBoxes = driver.findElements(By.xpath("//div[@class='c22 show']//div[@class='c29_block']//li//input"));
         for (WebElement e:directionsTravelCheckBoxes) {
             boolean r = e.isSelected();
             Assert.assertTrue(r);

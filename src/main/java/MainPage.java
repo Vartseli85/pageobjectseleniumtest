@@ -74,7 +74,7 @@ public class MainPage {
         for (WebElement e : directionsTravelCheckBoxes) {
             e.click();
             try {
-                Thread.sleep(1000);                 //1500 milliseconds is one second.
+                Thread.sleep(1000);
             } catch(InterruptedException ex) {
                 Thread.currentThread().interrupt();
             }
