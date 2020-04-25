@@ -6,9 +6,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.comparison.ImageDiff;
+import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
 
 public class MainPageTest {
 
@@ -82,9 +90,16 @@ public class MainPageTest {
             Assert.assertTrue(r);
         }
     }
+    @Test
+    public void photoCompare() throws IOException {
+        WebElement imgNavigatingNewWaters = driver.findElement(By.xpath("//li[2]//ul[1]//li[2]//article[1]//div[1]//div[1]//figure[1]//img[1]"));
+       Screenshot screenshot = mainPage.takeScreenShotElement(driver,imgNavigatingNewWaters);
+       BufferedImage actualImage = screenshot.getImage();
+       BufferedImage expectedImage = ImageIO.read(new File("C:/Users/varts/IdeaProjects/elementScreenShortExpected/photo.png"));
+        ImageDiffer imgDiff = new ImageDiffer();
+        ImageDiff diff = imgDiff.makeDiff(expectedImage,actualImage);
 
-
-
+    }
     @After
     public void tearDown(){
         driver.quit();
