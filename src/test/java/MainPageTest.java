@@ -98,6 +98,7 @@ public class MainPageTest {
        BufferedImage expectedImage = ImageIO.read(new File("C:/Users/varts/IdeaProjects/elementScreenShortExpected/photo.png"));
         ImageDiffer imgDiff = new ImageDiffer();
         ImageDiff diff = imgDiff.makeDiff(expectedImage,actualImage);
+        Assert.assertTrue(diff.hasDiff());
 
     }
     @After
