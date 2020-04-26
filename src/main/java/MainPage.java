@@ -6,7 +6,12 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
 
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 
@@ -22,6 +27,7 @@ public class MainPage {
     private By logInButton = By.xpath("//a[contains(text(),'Log in')]");
     private By registerButton = By.xpath("//a[contains(text(),'Register')]");
     private By distinationDrop = By.xpath("//span[@class='e1_toggle_single'][contains(text(),'Destination')]");
+
 
 
     public LogInPage clickLogIn() {
@@ -82,6 +88,12 @@ public class MainPage {
 
 
         }
+    }
+    public Screenshot takeScreenShotElement(WebDriver dr,WebElement elementName) throws IOException {
+        Screenshot screenshot = new AShot().takeScreenshot(driver,elementName);
+       return screenshot;
+
+
     }
 }
 
